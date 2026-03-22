@@ -2,16 +2,21 @@ LumenFlow
 
 Automated On-Chain Billing Engine for Stellar
 
-Description
+Description:
 LumenFlow is an automated on-chain billing engine built for the Stellar network. It enables decentralized recurring payments by allowing users to authorize time-bound asset transfers using a non-custodial Vault-Allowance model. Built with Soroban (Rust), it removes the need for centralized payment processors while keeping Stellar’s low transaction costs.
 
-Key Features
+Technical Architecture:
+Smart Contracts (Soroban/Rust): Vault creation, allowance logic, scheduled payments
+Frontend (React/Next.js): Subscription management dashboard
+Indexer Layer: Tracks billing cycles and contract events
+Wallet Integration: Freighter / Stellar wallets for signing
+Network Layer: Stellar Testnet/Mainnet execution
+
+Key Features:
 Recurring decentralized payments
 Non-custodial vault allowance system
 Soroban smart contracts (Rust)
 Low-cost automated billing
-
-Installation
 
 # Install Stellar CLI (required)
 
